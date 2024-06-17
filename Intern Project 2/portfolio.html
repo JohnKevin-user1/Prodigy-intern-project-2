@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Kevin Felix X - Portfolio</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 999;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 10px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        header nav {
+            display: flex;
+        }
+
+        header nav ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #dc143c;
+        }
+
+        section {
+            padding: 80px 0;
+            text-align: center;
+            margin-top: 70px; /* Added top margin to create space below fixed header */
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .project {
+            margin-bottom: 40px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+
+        .project h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #dc143c;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #c3123a;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            clear: both;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Contact form styles */
+        .contact-form {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .contact-form h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        .contact-form button {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            background-color: #dc143c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #c3123a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>John Kevin Felix X</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Welcome to my professional portfolio! I'm John Kevin Felix X, a dedicated web developer based in [Your Location]. With a strong passion for clean and efficient code, I specialize in front-end development using HTML5, CSS3, JavaScript, and popular frameworks like React.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1 Title</h3>
+                <p>Description of Project 1.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2 Title</h3>
+                <p>Description of Project 2.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="contact-form">
+                <h2>Contact Me</h2>
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <br><br>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <br><br>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <br><br>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 John Kevin Felix X. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for form submission handling
+        const form = document.getElementById('contact-form');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // You can add code here to handle form submission, e.g., sending data to a server
+            // For now, let's log the form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const message = formData.get('message');
+
+            console.log(`Name: ${name}, Email: ${email}, Message: ${message}`);
+
+            // Optionally, you can add code to show a confirmation message to the user
+            alert('Message sent successfully!');
+            this.reset(); // Reset the form after submission
+        });
+    </script>
+</body>
+</html>
